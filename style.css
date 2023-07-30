@@ -1,0 +1,589 @@
+
+
+ul, ol, p, pre, em, sub, sup, canvas, section, article, aside, img, a, li, iframe, table, nav, header, footer, body, menu, button { margin: 0; padding: 0; vertical-align: middle; box-sizing: border-box; -webkit-box-sizing: border-box; list-style: none; text-decoration: none; outline: none; border: 0; border-spacing: 0; border-collapse: collapse; font-family: 'Poppins', sans-serif;}
+html {
+  scroll-behavior: smooth;
+}
+*, after, before { box-sizing: border-box; -webkit-box-sizing: border-box;font-family: 'Poppins', sans-serif;}
+
+h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; font-family: 'Poppins', sans-serif;}
+
+a { text-decoration: none !important; color: #000; display: inline-block;font-family: 'Poppins', sans-serif; }
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+a:hover {
+  color: #17335f;
+}
+
+label {
+  font-weight: normal !important;
+}
+
+b,
+strong {
+ font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+u {
+  text-decoration: underline;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="text"],
+textarea {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+}
+
+p {
+  color: #000;
+ font-family: 'Poppins', sans-serif;
+}
+
+a {
+  transition: 0.2s ease-out;
+  -webkit-transition: 0.2s ease-out;
+}
+
+button {
+  outline: none !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+body { margin: 0; padding: 0;font-family: 'Poppins', sans-serif;background: #ffffff; font-size: 15px; color: #3e3e3e; width: 100%;    overflow-x: hidden;}
+
+
+body.offcanvas-active{
+	overflow:hidden;
+}
+.mobile-nav{display:none}
+.main-header {
+    width: 100%;
+    z-index: 10;
+    font-family: "Poppins";
+	background:#fff;
+}
+.navbar-nav li a.nav-link.active {
+    color: #ec0752;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow:0 3px 18px rgb(2 21 78 / 9%)
+}
+a.navbar-brand {
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+}
+.sticky + .content {
+  padding-top: 300px;
+}
+.offcanvas-header{ display:none; }
+
+.screen-darken{
+	height: 100%;
+	width:0%;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity:0;
+	visibility:hidden;
+	background-color: rgba(34, 34, 34, 0.6);
+	transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active{
+	z-index:10; 
+	transition:opacity .3s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+.navbar-nav li a {
+    color: #000000;
+    font-weight: 700;
+    display: inline;
+    padding-bottom: 30px;
+	font-size:18px;
+}
+.navbar-nav li {
+    margin-left: 30px;
+}
+
+/* slider css */
+section#gym-slider {
+    padding: 80px 0;
+}
+.gym-slider-content h6{
+	font-size:20px;
+	color:#ec0752;
+}
+.gym-slider-content h1 {
+    font-size: 58px;
+    color: #000;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 17px 0;
+}
+.gym-slider-content p {
+    font-size: 18px;
+    color: #000;
+	line-height:1.8;
+
+}
+.gym-slider-content {
+    padding-top: 50px;
+}
+
+/* gym feature */
+.gym-feature{
+    padding: 120px 0px 80px ;
+    background-color: #343236;
+}
+.app-gym-intro-icon{position:relative;
+ z-index: 1;
+    line-height: 1;
+    margin-bottom: 35px;}
+.app-gym-intro-icon:before, .app-gym-intro-icon:after {
+    left: 33%;
+    top: -55px;
+    width: 60px;
+    content: "";
+    z-index: -1;
+    height: 125px;
+    position: absolute;
+    transform: rotate(
+-50deg);
+    transition: 500ms all ease;
+}
+.app-gym-intro-icon.bg-blue:before, .app-gym-intro-icon.bg-blue:after{
+background:#6ae0fe;
+}
+.app-gym-intro-icon.bg-orange:before, .app-gym-intro-icon.bg-orange:after{
+background:#f2821e;
+}
+.app-gym-intro-icon.bg-pink:before, .app-gym-intro-icon.bg-pink:after{
+background:#f1576b;
+}
+.app-gym-intro-icon:after {
+    left: 37%;
+    top: -45px;
+    height: 115px;
+    transform: rotate(
+45deg);
+}
+.app-gym-intro-icon i {
+    line-height: 1;
+    font-size: 60px;
+    transition: 500ms all ease;
+	z-index:22;
+color:#fff;
+}
+.gym-feature-box {
+    text-align: center;
+}
+.app-gym-text h3 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color:#fff;
+}
+.app-gym-text p{
+color:#d7d7d7;
+font-size:15px;
+}
+
+/* about us css */
+.gym-about-section{padding:80px 0}
+.about-content span {
+    font-size: 20px;
+    color: #ec0752;
+font-weight:600;
+}
+.about-content h2 {
+    color: #111111;
+    font-size: 48px;
+    font-weight: 700;
+    padding: 5px 0px 25px;
+}
+.about-content p {
+    margin: 0;
+    padding: 0;
+    color: #373a5b;
+    font-size: 16px;
+    overflow-x: hidden;
+    line-height: 1.625;
+ }
+.about-link-text{
+    padding-top: 35px;
+}
+.about-icon i {
+    line-height: 1.3;
+    font-size: 60px;
+    background: linear-gradient(
+-40deg, #ff851e 0%, #fc4399 100%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.about-icon {
+    margin-right: 30px;
+}
+.gym-about-text h3 {
+    color: #111111;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.gym-about-text p{font-size:16px; color:#111;}
+.about-icon-text{padding-bottom:25px}
+/* services css */
+.gym-feature-section{padding:80px 0; position:relative}
+.app-gym-feature-img.position-absolute {
+    position: absolute;
+    top: 0;
+    right: -154px;
+}
+.app-gym-feature-list{padding-top:30px}
+.app-gym-feature-list ul li:before {
+    top: 0;
+    left: 0;
+    content: "";
+    font-weight: 900;
+    color: #6b20d8;
+    position: absolute;
+    font-family: "Font Awesome 5 Free";
+}
+.app-gym-feature-list ul li {
+    list-style: none;
+    display: block;
+padding-left: 40px;
+    margin-bottom: 8px;
+    position: relative;
+
+}
+
+/* gym plan */
+.gym-plan-section{background-image: url(../images/plan-bg.jpg); background-repeat:no-repeat; padding:80px 0; position:relative}
+.color-white{color:#fff; text-align:center}
+.color-white span{color:#fff}
+.color-white h2{color:#fff}
+.color-white p{color:#fff}
+.app-gym-plan nav {
+    padding: 5px;
+    border-radius: 30px;
+    margin: 60px auto 30px;
+    border: 1px solid #9193b2;
+width:80%;
+}
+.nav-tabs {
+    border-bottom:0;
+}
+.app-gym-plan .nav-tabs .nav-link{
+color:#fff;
+font-weight:700;
+font-size:15px;
+}
+div#nav-tabContent {
+    background: #ec0752;
+    padding: 30px;
+    border-radius: 15px;
+}
+.app-gym-plan-icon i {
+    color: #fff;
+    line-height: 1;
+    font-size: 50px;
+}
+ .app-gym-plan-text h3, .app-gym-plan-text a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+ .app-gym-plan-text span {
+    color: #555555;
+    font-size: 16px;
+    padding: 8px 15px;
+    background-color: #fff;
+}
+.app-gym-plan-schedule-inner {
+    padding: 55px 20px;
+}
+.app-gym-plan-schedule-inner:before {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    content: "";
+    position: absolute;
+    background-color: #fff;
+}
+.pos-none:before{display:none}
+.app-gym-plan-schedule:after {
+    top: 49%;
+    left: 0;
+    right: 0;
+    width: 92%;
+    height: 1px;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    background-color: #fff;
+}
+ .app-gym-plan-text p {
+    color: #fff;
+    padding-bottom: 20px;
+}
+.app-gym-plan .nav-tabs .nav-link.active, .app-gym-plan .nav-tabs .nav-link:hover {
+    background-color: #ec0752;
+    color: #fff;
+    border-radius: 30px;
+    border: 0;
+}
+
+/* price box */
+.app-gym-pricing-innerbox {
+    z-index: 1;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 90px 0px rgb(0 0 0 / 13%);
+    background: linear-gradient(
+45deg, #fc409a 0%, #ff8917 100%);
+}
+.app-gym-pricing-innerbox:before {
+    top: 2px;
+    left: 1px;
+    content: "";
+    width: 99.5%;
+    height: 98.5%;
+    z-index: -1;
+    position: absolute;
+    background-color: #fff;
+    transition: 500ms all ease;
+}
+.app-gym-pricing-innerbox .app-gym-pricing-img {
+    margin-right: 25px;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.app-gym-pricing-innerbox .app-gym-pricing-text {
+    display: flow-root;
+    padding: 30px 40px 30px 0px;
+}
+.app-gym-pricing-innerbox .app-gym-pricing-text h3 {
+    color: #000000;
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 7px;
+}
+.app-gym-pricing-innerbox .app-gym-pricing-text p {
+    padding-bottom: 50px
+}
+.app-gym-pricing-innerbox .app-gym-pricing-text .app-gym-price-value {
+    bottom: 10px;
+    left: -100px;
+    padding: 8px 20px;
+    position: absolute;
+    background: linear-gradient(
+-45deg, #fc409a 0%, #ff8917 100%);
+}
+a.pricing-more-btn.float-right.text-uppercase {
+    display: none;
+}
+.app-gym-pricing-innerbox .app-gym-pricing-text .app-gym-price-value span {
+    color: #fff;
+    font-size: 14px;
+    max-width: 40px;
+    padding-top: 5px;
+    line-height: 1.2;
+    margin-right: 5px;
+}
+.app-gym-pricing-text .app-gym-price-value h3 {
+    color: #fff;
+    font-size: 36px;
+    padding-bottom: 0;
+}
+
+.sa-contact-inner-form input {
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #e8e8e8
+}
+.sa-contact-inner-form textarea {
+    width: 100%;
+    padding-left: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #e8e8e8
+}
+.sa-contact-inner-form button {
+    color: #000;
+    height: 60px;
+    width: 170px;
+    border: none;
+    font-weight: 600;
+    border-radius: 30px;
+    background-color: #fff;
+}
+.contact-us{
+background:url(../images/tst-bg.jpg) no-repeat;
+padding:80px 0
+}
+.sa-contact-inner-form input:focus, .sa-contact-inner-form textarea:focus,.sa-contact-inner-form input:active, .sa-contact-inner-form textarea:active{outline:0; border:2px solid #e8e8e8;}
+ .app-gym-footer-social a {
+    width: 28px;
+    height: 28px;
+    color: #3b5998;
+    line-height: 28px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #ffffff;
+    transition: 500ms all ease;
+font-size:14px;
+}
+.footer-section{background:#343434; padding:15px 0}
+.copyright-text.text-right p{color:#fff; text-align:right}
+/* ============ mobile view ============ */
+.app-gym-pricing-img.float-left {
+    float: left;
+}
+@media all and (max-width: 1200px) {
+.app-gym-feature-img.position-absolute{right:-300px}
+
+}
+	
+
+/* ============ mobile view .end// ============ *//* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+	.mobile-nav{display:block; padding:10px 0;}
+	.offcanvas-header{ display:block; }
+.navbar-brand{display:none}
+	.mobile-offcanvas{
+		visibility: hidden;
+		transform:translateX(-100%);
+	    border-radius:0; 
+		display:block;
+	    position: fixed;
+	    top: 0; left:0;
+	    height: 100%;
+	    z-index: 1200;
+	    width:80%;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+	}
+.navbar-button-bar {
+    text-align: right;
+    width: 100%;
+}
+.navbar-button-bar button{
+background:transparent;
+color: #ec0752;
+    cursor: pointer;
+    font-size: 30px;
+}
+button.btn-close.float-end {
+    color: #fff;
+    background-image: none;
+    font-size: 25px;
+    opacity: 1;
+    top: 5px;
+    position: absolute;
+    right: 0;
+    background: #ec0752;
+    line-height: 10px;
+    border-radius: 50%;
+}
+.mob-logo a {
+    font-size: 30px;
+    color: #000;
+    font-weight: 700;
+}
+.navbar-nav li{padding-bottom:10px}
+.navbar-nav li a{color:#fff}
+	.mobile-offcanvas.show{
+		visibility: visible;
+    	transform: translateX(0);
+background: #1b0234;
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+		display: block;
+	}
+.gym-slider-content h1{font-size:38px}
+.gym-slider-content p{font-size:14px}
+.app-gym-intro-icon:before, .app-gym-intro-icon:after{display:none}
+.app-gym-intro-icon.bg-blue i{
+    color: #6ae0fe;
+}
+.app-gym-intro-icon.bg-orange i{
+    color: #f2821e;
+}
+.app-gym-intro-icon.bg-pink i{
+    color:#f1576b;
+}
+.gym-feature-box{padding-bottom:30px}
+.gym-feature{padding:60px 0}
+.app-gym-about-img.position-relative{padding-bottom:35px}
+.app-gym-feature-img.position-absolute {padding-top:20px;   position: static !important;    right: unset;    top: unset; text-align:center;}
+.app-gym-plan nav{width:100%}
+.copyright-text p {
+    text-align: center !important;
+}
+.app-gym-footer-social {    text-align: center;padding-bottom:10px}
+}	
+/* ============ mobile view .end// ============ */
+
+@media all and (max-width: 599px) {
+.app-gym-pricing-img.float-left {
+    float: inherit;
+    width: 100%;
+}
+.app-gym-pricing-innerbox .app-gym-pricing-text .app-gym-price-value{
+    position: static !important;
+    left: unset;
+width: fit-content
+}
+.app-gym-pricing-text.app-gym-headline.pera-content.position-relative {
+    padding: 25px;
+}
+
+.app-gym-pricing-img img{width:100%;}
+}
